@@ -16,72 +16,54 @@ public class Reserva {
     public int getIdReserva() {
         return idReserva;
     }
-
     public void setIdReserva(int idReserva) {
         this.idReserva = idReserva;
     }
-
     public int getIdHuesped() {
         return idHuesped;
     }
-
     public void setIdHuesped(int idHuesped) {
         this.idHuesped = idHuesped;
     }
-
     public int getIdHabitacion() {
         return idHabitacion;
     }
-
     public void setIdHabitacion(int idHabitacion) {
         this.idHabitacion = idHabitacion;
     }
-
     public int getCantPersonas() {
         return cantPersonas;
     }
-
     public void setCantPersonas(int cantPersonas) {
         this.cantPersonas = cantPersonas;
     }
-
-
     public String getObservaciones() {
         return observaciones;
     }
-
     public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
     }
-
     public String getPagadoCompletamente() {
         return pagadoCompletamente;
     }
-
     public void setPagadoCompletamente(String pagadoCompletamente) {
         this.pagadoCompletamente = pagadoCompletamente;
     }
-
     public String getPeriodoTiempo() {
         return periodoTiempo;
     }
-
     public void setPeriodoTiempo(String periodoTiempo) {
         this.periodoTiempo = periodoTiempo;
     }
-
     public LocalDate getFechaReserva() {
         return fechaReserva;
     }
-
     public void setFechaReserva(LocalDate fechaReserva) {
         this.fechaReserva = fechaReserva;
     }
-
     public LocalDate getFechaOcup() {
         return fechaOcup;
     }
-
     public void setFechaOcup(LocalDate fechaOcup) {
         this.fechaOcup = fechaOcup;
     }

@@ -1,7 +1,6 @@
 package Dominio;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Huesped {
    private int huesId;
@@ -14,82 +13,59 @@ public class Huesped {
    private String huesTelefono;
    private String huesPais;
 
-    private ArrayList<Reserva> reservaciones;
-
     public int getHuesId() {
         return huesId;
     }
-
     public void setHuesId(int huesId) {
         this.huesId = huesId;
     }
-
     public String getHuesNombre() {
         return huesNombre;
     }
-
     public void setHuesNombre(String huesNombre) {
         this.huesNombre = huesNombre;
     }
-
     public String getHuesAPaterno() {
         return huesAPaterno;
     }
-
     public void setHuesAPaterno(String huesAPaterno) {
         this.huesAPaterno = huesAPaterno;
     }
-
     public String getHuesAMaterno() {
         return huesAMaterno;
     }
-
     public void setHuesAMaterno(String huesAMaterno) {
         this.huesAMaterno = huesAMaterno;
     }
-
     public String getHuesTipoDocumento() {
         return huesTipoDocumento;
     }
-
     public void setHuesTipoDocumento(String huesTipoDocumento) {
         this.huesTipoDocumento = huesTipoDocumento;
     }
-
     public int getHuesNumDocumento() {
         return huesNumDocumento;
     }
-
     public void setHuesNumDocumento(int huesNumDocumento) {
         this.huesNumDocumento = huesNumDocumento;
     }
-
     public LocalDate getHuesFechaNacimiento() {
         return huesFechaNacimiento;
     }
-
     public void setHuesFechaNacimiento(LocalDate huesFechaNacimiento) {
         this.huesFechaNacimiento = huesFechaNacimiento;
     }
-
     public String getHuesTelefono() {
         return huesTelefono;
     }
-
     public void setHuesTelefono(String huesTelefono) {
         this.huesTelefono = huesTelefono;
     }
-
     public String getHuesPais() {
         return huesPais;
     }
-
     public void setHuesPais(String huesPais) {
         this.huesPais = huesPais;
-    }
-
-    public ArrayList<Reserva> getReservaciones(){
-        return this.reservaciones;
     }
 
     public Huesped(int huesId,String huesNombre, String huesAPaterno, String huesAMaterno, String huesTipoDocumento, int huesNumDocumento, LocalDate huesFechaNacimiento, String huesTelefono, String huesPais) {
@@ -107,13 +83,13 @@ public class Huesped {
     @Override
     public String toString() {
         return "Huesped{" +
-                "ID: " + huesId +
+                "Id: " + huesId +
                 ", Nombre:'" + huesNombre + '\'' +
-                ", Apellido-Paterno:'" + huesAPaterno + '\'' +
-                ", Apellido-Materno:" + huesAMaterno + '\'' +
-                ", Tipo-Documento:" + huesTipoDocumento + '\'' +
-                ", Numero-Documento:" + huesNumDocumento +
-                ", Fecha-Nacimiento:" + huesFechaNacimiento + '\'' +
+                ", Apellido Paterno:'" + huesAPaterno + '\'' +
+                ", Apellido Materno:" + huesAMaterno + '\'' +
+                ", Tipo Documento:" + huesTipoDocumento + '\'' +
+                ", Numero Documento:" + huesNumDocumento +
+                ", Fecha Nacimiento:" + huesFechaNacimiento + '\'' +
                 ", Telefono:" + huesTelefono + '\'' +
                 ", Pais:" + huesPais + '\'' +
                 '}';

@@ -11,31 +11,24 @@ public class Tarifa {
     public int getIdTarifa() {
         return idTarifa;
     }
-
     public void setIdTarifa(int idTarifa) {
         this.idTarifa = idTarifa;
     }
-
     public int getIdHabitacion() {
         return idHabitacion;
     }
-
     public void setIdHabitacion(int idHabitacion) {
         this.idHabitacion = idHabitacion;
     }
-
     public LocalDate getFechaVigencia() {
         return fechaVigencia;
     }
-
     public void setFechaVigencia(LocalDate fechaVigencia) {
         this.fechaVigencia = fechaVigencia;
     }
-
     public int getPrecio() {
         return precio;
     }
-
     public void setPrecio(int precio) {
         this.precio = precio;
     }
