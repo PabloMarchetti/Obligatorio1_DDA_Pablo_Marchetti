@@ -1,0 +1,60 @@
+CREATE DATABASE Obligatorio1_DDA;
+
+USE Obligatorio1_DDA;
+
+CREATE TABLE huespedes (
+    idHuesped INT AUTO_INCREMENT PRIMARY KEY,
+    nomHuesped VARCHAR(50) NOT NULL,
+    aPatHuesped VARCHAR(50) NOT NULL,
+    aMatHuesped VARCHAR(50) NOT NULL,
+    tipoDocHuesped VARCHAR(20) NOT NULL,
+    numDocHuesped INT NOT NULL UNIQUE,
+    fechaNacHuesped DATE NOT NULL,
+    telHuesped VARCHAR(16) NOT NULL,
+    paisHuesped VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE hoteles (
+    idHotel INT AUTO_INCREMENT PRIMARY KEY,
+    nomHotel VARCHAR(100) NOT NULL,
+    ciuHotel VARCHAR(50) NOT NULL,
+    paisHotel VARCHAR(50) NOT NULL,
+    cantEstHotel INT NOT NULL,
+    dirHotel VARCHAR(100) NOT NULL,
+    zonaBarrioHotel VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE habitaciones (
+    idHabitacion INT AUTO_INCREMENT PRIMARY KEY,
+    idHotel INT NOT NULL,
+    tipoHabitacion VARCHAR(50) NOT NULL,
+    capCamas INT NOT NULL,
+    camaMat VARCHAR(2) NOT NULL,
+    aireAcon VARCHAR(2),
+    balHabitacion VARCHAR(2),
+    vistaHabitacion VARCHAR(100),
+    cantAmbiHabitacion INT NOT NULL,
+    FOREIGN KEY (idHotel) REFERENCES hoteles(idHotel)
+);
+
+
+CREATE TABLE reservas (
+    idReserva INT AUTO_INCREMENT PRIMARY KEY,
+    idHuesped INT NOT NULL,
+    idHabitacion INT NOT NULL,
+    cantPersonas INT NOT NULL,
+    observaciones TEXT NOT NULL,
+    pagadoCompletamente VARCHAR(3) NOT NULL,
+    periodoTiempo VARCHAR(50),
+    fechaReserva DATE NOT NULL,
+    fechaOcup DATE NOT NULL,
+    FOREIGN KEY (idHuesped) REFERENCES huespedes(idHuesped),
+    FOREIGN KEY (idHabitacion) REFERENCES habitaciones(idHabitacion)
+);
+
+CREATE TABLE tarifas(
+    idTarifa INT AUTO_INCREMENT PRIMARY KEY,
+    idHabitacion INT NOT NULL,
+    fechaVigencia DATE NOT NULL,
+    precio INT NOT NULL,
+    FOREIGN KEY (idHabitacion) REFERENCES habitaciones(idHabitacion));

@@ -1,0 +1,102 @@
+-- Insertar en la tabla huespedes
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('juan', 'perez', 'gomez', 'ci', 12345678, '1990-05-15', '091234567', 'uruguay');
+
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('maria', 'lopez', 'fernandez', 'ci', 87654321, '1985-08-25', '098765432', 'argentina');
+
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('carlos', 'martinez', 'diaz', 'ci', 11223344, '1992-03-10', '091122334', 'chile');
+
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('sofia', 'gonzalez', 'rodriguez', 'ci', 33445566, '1995-07-20', '098123456', 'uruguay');
+
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('andres', 'suarez', 'lopez', 'dni', 55667788, '1988-11-30', '094567890', 'uruguay');
+
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('ana', 'morales', 'sanchez', 'dni', 66778899, '1993-01-15', '099876543', 'argentina');
+
+INSERT INTO huespedes (nomHuesped, aPatHuesped, aMatHuesped, tipoDocHuesped, numDocHuesped, fechaNacHuesped, telHuesped, paisHuesped)
+VALUES ('pedro', 'fernandez', 'perez', 'dni', 77889900, '1997-09-05', '097654321', 'chile');
+
+-- Insertar en la tabla hoteles
+INSERT INTO hoteles (nomHotel, ciuHotel, paisHotel, cantEstHotel, dirHotel, zonaBarrioHotel)
+VALUES ('hotel central', 'montevideo', 'uruguay', 4, '18 de julio 1234', 'centro');
+
+INSERT INTO hoteles (nomHotel, ciuHotel, paisHotel, cantEstHotel, dirHotel, zonaBarrioHotel)
+VALUES ('hotel del mar', 'maldonado', 'uruguay', 3, 'avenida playa 5678', 'punta carretas');
+
+INSERT INTO hoteles (nomHotel, ciuHotel, paisHotel, cantEstHotel, dirHotel, zonaBarrioHotel)
+VALUES ('hotel del plata', 'maldonado', 'uruguay', 5, 'calle oceano 1010', 'punta del este');
+
+INSERT INTO hoteles (nomHotel, ciuHotel, paisHotel, cantEstHotel, dirHotel, zonaBarrioHotel)
+VALUES ('hotel de la sierra', 'piriapolis', 'uruguay', 4, 'ruta 10 km 35', 'las flores');
+
+INSERT INTO hoteles (nomHotel, ciuHotel, paisHotel, cantEstHotel, dirHotel, zonaBarrioHotel)
+VALUES ('hotel capital', 'montevideo', 'uruguay', 5, 'avenida libertador 1234', 'centro');
+
+INSERT INTO hoteles (nomHotel, ciuHotel, paisHotel, cantEstHotel, dirHotel, zonaBarrioHotel)
+VALUES ('hostal del campo', 'colonia', 'uruguay', 3, 'ruta 1 km 150', 'carmelo');
+
+-- Insertar en la tabla habitaciones
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (1, 'suite', 2, 'si', 'si', 'si', 'vista al mar', 2);
+
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (2, 'doble', 1, 'no', 'si', 'no', 'vista al jardin', 1);
+
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (2, 'doble', 1, 'no', 'no', 'no', 'vista a la piscina', 1);
+
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (4, 'individual', 1, 'no', 'no', 'no', 'vista a la montaña', 1);
+
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (5, 'suite', 2, 'si', 'si', 'si', 'vista a la ciudad', 2);
+
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (6, 'doble', 2, 'no', 'si', 'no', 'vista al jardin', 1);
+
+INSERT INTO habitaciones (idHotel, tipoHabitacion, capCamas, camaMat, aireAcon, balHabitacion, vistaHabitacion, cantAmbiHabitacion)
+VALUES (5, 'matrimonial', 1, 'si', 'si', 'si', 'vista al mar', 2);
+
+-- Insertar en la tabla reservas
+INSERT INTO reservas (idHuesped, idHabitacion, cantPersonas, observaciones, pagadoCompletamente, periodoTiempo, fechaReserva, fechaOcup)
+VALUES (1, 1, 2, 'sin observaciones', 'si', '1 semana', '2024-10-01', '2024-10-05');
+
+INSERT INTO reservas (idHuesped, idHabitacion, cantPersonas, observaciones, pagadoCompletamente, periodoTiempo, fechaReserva, fechaOcup)
+VALUES (2, 2, 1, 'llegada anticipada', 'no', '3 días', '2024-10-02', '2024-10-04');
+
+INSERT INTO reservas (idHuesped, idHabitacion, cantPersonas, observaciones, pagadoCompletamente, periodoTiempo, fechaReserva, fechaOcup)
+VALUES (3, 4, 1, 'sin observaciones', 'si', '2 noches', '2024-11-01', '2024-11-05');
+
+INSERT INTO reservas (idHuesped, idHabitacion, cantPersonas, observaciones, pagadoCompletamente, periodoTiempo, fechaReserva, fechaOcup)
+VALUES (4, 5, 2, 'necesita habitación tranquila', 'no', '4 noches', '2024-11-02', '2024-11-10');
+
+INSERT INTO reservas (idHuesped, idHabitacion, cantPersonas, observaciones, pagadoCompletamente, periodoTiempo, fechaReserva, fechaOcup)
+VALUES (5, 6, 3, 'con desayuno incluido', 'si', '1 semana', '2024-10-08', '2024-11-15');
+
+INSERT INTO reservas (idHuesped, idHabitacion, cantPersonas, observaciones, pagadoCompletamente, periodoTiempo, fechaReserva, fechaOcup)
+VALUES (2, 7, 1, 'sin observaciones', 'no', '3 noches', '2024-10-12', '2024-11-15');
+
+-- Insertar en la tabla tarifas
+INSERT INTO tarifas (idHabitacion, fechaVigencia, precio)
+VALUES (1, '2024-01-01', 150);
+
+INSERT INTO tarifas (idHabitacion, fechaVigencia, precio)
+VALUES (2, '2024-02-01', 100);
+
+INSERT INTO tarifas (idHabitacion, fechaVigencia, precio)
+VALUES (3, '2024-03-01', 200);
+
+
+INSERT INTO tarifas (idHabitacion, fechaVigencia, precio)
+VALUES (5, '2024-05-01', 180);
+
+INSERT INTO tarifas (idHabitacion, fechaVigencia, precio)
+VALUES (6, '2024-06-01', 160);
+
+
+
+

@@ -1,0 +1,64 @@
+                                    OBLIGATORIO 1 - DDA 2024
+                                Individual, entrega: 4/11 23:59hs
+
+Se desea implementar un sistema para gestionar la reserva de habitaciones en hoteles de
+    todo el mundo. Debe permitir al usuario consultar y administrar los hoteles, huespedes y
+    habitaciones disponibles y registrar reservas para los mismos, hacer consultas, modificarlas
+    o cancelarlas, así como pagar las estadías correspondientes (el pago previo congela el
+    precio dejando como saldo exclusivamente los consumos extra).
+
+Las habitaciones que puedan haber sido reservadas o precontratadas por fuera del sistema
+    (personal o telefónicamente en el propio hotel) no podrán ser reservadas o contratadas por
+    este sistema mientras figuren como “ocupadas”.
+
+De los huéspedes se desea registrar su identificación (Idhuesped), su nombre (nombre), su
+    primer apellido (apaterno), su segundo apellido (amaterno), su tipo de documento
+    (tipo_documento), el número de documento (num_ducumento), la fecha de nacimiento
+    (fecha_nacimiento), el teléfono (teléfono), y el país al que pertenece.
+
+El sistema tendrá información sobre las habitaciones ocupadas pero solo podrá identificar al
+    ocupante (responsable) si fue reservada o prepaga a través del sistema. Cada reserva o
+    prepago tiene un id autonumerado único. Las habitaciones tienen una capacidad de camas
+    y puede ser cama matrimonial o no. Cuando un usuario ocupa la habitación que había
+    reservado esto debe ser registrado en el sistema.
+
+De los hoteles se desea tener la identificación (idahotel) y el nombre (nombre), en que
+    ciudad y país está ubicado, la cantidad de estrellas, la dirección, en que zona/barrio de
+    dicha ciudad está ubicado, las habitaciones que tiene disponibles y ocupadas en un
+    momento dado con sus características básicas (cantidad de camas, cama matrimonial o
+    individuales, aire acondicionado, balcón, vista, amenities, etc.).
+
+Las tarifas tienen una fecha en que entran en vigencia y su validez sigue hasta que entre en
+    vigencia una nueva. Las reservas se identifican por el número de reserva (idreserva) y para
+    ella se debe almacenar, además de la cantidad de personas y habitaciones (tipo) y el
+    período de tiempo si se abonó completamente o si solo se pagó el monto acordado por la
+    reserva, la fecha en que se reservó (fechaRes) y las observaciones correspondientes
+    (observación).
+
+
+Consultas:
+• Consulta de hoteles o Por Ciudad o Por Nombre  o Por categoría
+  (cantidad de estrellas)
+• Reserva de habitaciones por un período de tiempo.
+• Filtrar habitaciones con y sin reserva previa.
+
+
+ENTREGA:
+Se debe entregar el proyecto con las clases correspondientes a la solución de lo planteado
+    en el presente documento. El entorno de aplicación debería ser la consola, utilizando JAVA
+    como lenguaje de programación y mysql como gestor de bases de datos.
+
+La documentación y programa se deben enviar en formato PDF a CTC y a
+    agustinmaciel0810@gmail.com e incluir:
+1. Portada del trabajo con los nombres de los integrantes del equipo.
+2. Indice.
+3. Letra del problema.
+4. Descripción del análisis y la solución.
+5. Diagrama de clases.
+6. Código impreso de las clases (solo dominio).
+7. Además, el código de las clases implementadas debe entregarse en un archivo
+   ZIPllamado "obligatorio1-ApellidoDeAlumno1".
+
+Se valorará positivamente el uso de GitHub para el trabajo en conjunto. En caso de
+    utilizarlo, es necesario que al momento de la entrega, el repositorio se encuentre
+    público y la URL adjunta en la descripción de la solución.
